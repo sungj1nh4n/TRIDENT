@@ -1,0 +1,16 @@
+# 인물 감지 + BoT-SORT 트래킹 + SigLIP2-ReID 매칭 실행에 필요한 패키지
+# Python 3.10–3.12 권장. GPU(CUDA) 환경에서 동작.
+
+ultralytics>=8.3         # YOLO 감지 + 내장 BoT-SORT 트래커
+torch>=2.4               # 딥러닝 런타임
+torchvision
+transformers>=4.45       # SigLIP2 ReID 임베더
+pydantic>=2              # 설정(Settings)
+pydantic-settings>=2
+Pillow>=10               # 이미지 크롭
+numpy<2
+opencv-python-headless>=4.10   # 영상 메타/프레임 읽기(cv2)
+decord>=0.6.0            # 빠른 랜덤 프레임 디코딩(ReID 크롭 추출)
+
+# (선택) 인물 ReID LoRA 어댑터를 쓸 경우
+peft>=0.11
