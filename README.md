@@ -1,3 +1,4 @@
+# TRIDENT
 # PersonTracking
 # 영상 내 능동형 인물 감지 및 재식별(ReID) 기반 다중객체 궤적 트래킹
 
